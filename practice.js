@@ -131,8 +131,36 @@
 // }
 
 
-for (let i =  1; i <= 30; i++)  {
-	if (i % 3  === 0 && i  % 5 === 0){
-		console.log(i);
-	}
-}
+// for (let i =  1; i <= 30; i++)  {
+// 	if (i % 3  === 0 && i  % 5 === 0){
+// 		console.log(i);
+// 	}
+// }
+
+
+// module 20 practice string and object ---------------------------------
+// const country = 'bangladesh';
+// const division = 'dhaka';
+// const district = 'feni';
+// const thana = 'sonagazi';
+
+// const thana = new String ('akash');
+// console.log(typeof thana);
+
+// const numbers = [12, 22, 32, 42, 42, 53, 653, 53];
+// console.log(numbers);
+// numbers[1] = '44';
+// console.log(numbers);
+
+const capital = 'dhaka';
+console.log(capital);
+capital[0] = 'F';
+
+console.log(capital);
+console.log(capital.length);
+console.log(capital.toUpperCase());
+console.log(capital.toLowerCase());
+console.log(capital.toLocaleLowerCase);
+
+
+
