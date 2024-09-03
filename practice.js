@@ -152,15 +152,50 @@
 // numbers[1] = '44';
 // console.log(numbers);
 
-const capital = 'dhaka';
-console.log(capital);
-capital[0] = 'F';
+// const capital = 'dhaka';
+// console.log(capital);
+// capital[0] = 'F';
 
-console.log(capital);
-console.log(capital.length);
-console.log(capital.toUpperCase());
-console.log(capital.toLowerCase());
-console.log(capital.toLocaleLowerCase);
+// console.log(capital);
+// console.log(capital.length);
+// console.log(capital.toUpperCase());
+// console.log(capital.toLowerCase());
+// console.log(capital.toLocaleLowerCase);
+// console.log(capital[1]);
+// console.log(capital.split('a'));
 
+// const school = 'RAJ UK Uttara model school';
+
+// console.log(school);
+
+// const subject = 'Chemistry';
+// const book = 'chemistry';
+
+// if (subject.toLowerCase() === book.toLowerCase()) {
+// 	console.log('i am reading book aibar porikkhai patai felmu');
+// }
+// else {
+// 	console.log('hudai hudai prista ultai ar bat khawar jonno');
+// }
+
+// const drink = 'water';
+// const liquid = '  water';
+
+// if (drink.trim() === liquid.trim()) {
+// 	console.log('pani er opor nam life');
+// }
+// else {
+// 	console.log('somodrer pani khaite pari na');
+// }
+
+const name = 'akash';
+const name1 = 'AKash';
+
+if (name.toUpperCase() === name1.toUpperCase()) {
+	console.log('My name is Akash');
+}
+else {
+	console.log('My name is akash');
+}
 
 
