@@ -353,6 +353,9 @@
 // const a = isNaN(9);
 // console.log(a);
 
-const a = isNaN(4 - 'hello');
-console.log(a);
+// const a = isNaN(4 - 'hello');
+// console.log(a);
+
+// module 18 ---------------------------------------
+// ----------------------------------------
 
