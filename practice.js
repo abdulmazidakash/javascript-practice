@@ -282,20 +282,77 @@
 // }
 // console.log(rev);
 
-const person = {
-	name: 'Akash',
-	profession:  'web dev',
-	salary: 000,
-	married: false,
-	'fav places': ['bandorbon', 'saintmartin', 'kuakata']
+// const person = {
+// 	name: 'Akash',
+// 	profession:  'web dev',
+// 	salary: 000,
+// 	married: false,
+// 	'fav places': ['bandorbon', 'saintmartin', 'kuakata']
 
-}
+// }
 
-console.log(person);
-person.salary = 30000;
+// console.log(person);
+// person.salary = 30000;
 
-console.log(person);
-person['age'] = 26;
-person['fav places'] = ['maldives', 'bali', 'pataya'];
-console.log(person);
+// console.log(person);
+// person['age'] = 26;
+// person['fav places'] = ['maldives', 'bali', 'pataya'];
+// console.log(person);
+
+// ---------------------------------------------
+// module 17---------------
+
+// let car = 'red';
+// console.log(car);
+
+// car = 'green';
+// console.log(car);
+
+// let orangePrice = 40;
+// let applePrice  = 40;
+
+// console.log(orangePrice + applePrice);
+
+// let num = 50 / 0;
+// console.log(num);
+// + = Addition 
+// -  = substraction
+// *  = Multiplication
+// ** = Exponentiation
+// / = Division 
+// % = Modulus 
+
+// let onionPrice = 40;
+// let applePrice = 40;
+
+// console.log(onionPrice % applePrice);
+
+// let num = .1;
+// let num1 = .2;
+// let total = num+num1 ;
+
+// console.log(total.toFixed(2));
+
+// const a = 4 - 'hello';
+// console.log(a);
+// const b = 4 / 0;
+// console.log(b);
+
+// let x = '10';
+// let num = Number(x);
+// console.log(num);
+
+// let x = '10.99';
+// let num = parseInt(x);
+// console.log(num);
+
+// let x = '10.99';
+// let num = parseFloat(x);
+// console.log(num);
+
+// const a = isNaN(9);
+// console.log(a);
+
+const a = isNaN(4 - 'hello');
+console.log(a);
 
