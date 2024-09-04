@@ -359,3 +359,162 @@
 // module 18 ---------------------------------------
 // ----------------------------------------
 
+// console.log(isNaN(123));
+
+// console.log(Number.MAX_VALUE);
+
+// let age = 20;
+
+// if (age > 18) {
+// 	console.log('you can go mela');
+// }
+// else if (age > 13) {
+// 	console.log('you can go some ride');
+// }
+// else{
+// 	console.log('sorry, your request not accepted');
+// }
+
+// const salary = 25000;
+// const isBCS = true;
+
+// if (salary > 20000){
+// 	console.log('su------patro');
+// }else{
+// 	console.log('onno patro khuji');
+// }
+
+// const price = 6000;
+
+// if (price >= 5000) {
+// 	// 10 % discount
+// 	const discount = price * 10  / 100 ;
+// 	const payAmount = price - discount;
+// 	console.log(payAmount);
+// }
+// else if (price > 2500){
+// 	//5 % discount
+// 	const discount = price * 5 / 100;
+// 	const payAmount = price - discount;
+// 	console.log(payAmount);
+// }
+// else{
+// 	console.log(price);
+// }
+
+// const age = 40;
+// const isStudent = true;
+// const price = 800;
+
+// if (age < 10) {
+// 	console.log('you can eat for free');
+// }
+// else if (isStudent) {
+// 	//50 % discount 
+// 	const discount = price * 50 / 100;
+// 	const payAmount = price - discount;
+// 	console.log(payAmount);
+// }
+
+// else{
+// 	console.log(price);
+// }
+
+// const money = 20;
+// if (money > 300) {
+// 	console.log('bro you are rich!!!');
+// }
+// else{
+// 	if(money > 100) {
+// 		console.log('tui gorib o na boro lok o na');
+// 	}
+// 	else{
+// 		if(money > 0){
+// 			console.log('dosto tui kola kha.calcium bara');
+// 		}
+// 		else{
+// 			console.log('tui amar bondo na');
+// 		}
+// 	}
+// }
+
+// const age =  12;
+// if (age >= 18) {
+// 	console.log('you can vote');
+// }else{
+// 	console.log('ghumai thako');
+// }
+
+// age >= 18 ? console.log('vote dio') : console.log('ghumai thako');
+
+// let price = 500;
+// const isLeader = true;
+
+// if (isLeader  === true) {
+// 	price = 0;
+// }
+// else {
+// 	price = price + 100;
+// }
+// console.log(price);
+
+// price = isLeader === true ? 0 : price + 100;
+
+// if (isLeader === true)  {
+// 	if (price > 1000) {
+// 		price = price / 2 ;
+// 	}
+// 	else {
+// 		price = 0;
+// 	}
+// }
+// else {
+// 	price = price + 1000;
+// }
+
+// price = 2000;
+// price = isLeader === true ? 0 : price + 1000;
+// price = isLeader === true ? price > 1000 ? price / 2 : 0 : price + 1000;
+
+// console.log(price);
+
+// let age = 18;
+// let canVote = (age >= 18) ? "Yes, you can vote." : "No, you cannot vote.";
+// console.log(canVote);
+
+// const isLeader = true;
+// if (isLeader) {
+// 	console.log('leader ashce ! chair  charo');
+// }else{
+// 	console.log('vitore dukte divi na');
+// }
+
+// const isPassed = true;
+// if (!isPassed){
+// 	console.log('toke biya diya dimu');
+// }else{
+// 	console.log('tumi amader noyon er moni');
+// }
+
+// let age = 80; 
+// let isStudent = true; 
+// let price = 800; 
+
+
+// if (age < 10) {
+//   console.log('ticket free');
+// } else if (isStudent) {
+//   //50 % discount 
+//  const discount = price * 50 / 100;
+//  const payAmount = price - discount;
+//  console.log(payAmount);
+
+// } else if (age >= 60) {
+//   //15 % discount 
+//   const discount = price * 15 / 100;
+//   const payAmount = price - discount;
+//   console.log(payAmount);
+// } else {
+//   console.log(price);
+// }
+
