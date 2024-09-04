@@ -518,3 +518,49 @@
 //   console.log(price);
 // }
 
+
+// let numbers = [12, 12, 243, 453, 53, 34];
+// console.log(numbers);
+// console.log(numbers[3]);
+
+// const fourth = numbers[4];
+// console.log(fourth);
+// console.log(numbers);
+// console.log(numbers.length);
+// console.log(numbers.indexOf(243));
+
+// let numbers = [12, 12, 243, 453, 53, 34];
+
+// console.log(numbers);
+// numbers.push(44);
+// console.log(numbers);
+
+// const friends = ['balam', 'kalam', 'salam', 'gelam', 'pailam'];
+// friends.push('khailam');
+// console.log(friends);
+
+// const out1 = friends.pop();
+// console.log(friends);
+// const out2 = friends.pop();
+// console.log(friends);
+// console.log(out1, out2);
+
+
+const friends = ['balam', 'kalam', 'salam', 'gelam', 'pailam'];
+
+// console.log(friends);
+
+// friends.shift();
+// console.log(friends);
+
+// friends.unshift('ghumailam');
+// console.log(friends);
+
+console.log(friends.includes('balam'));
+
+if (friends.includes('salam')){
+	console.log('party');
+}
+else {
+	console.log('no food .we are fasting');
+}
