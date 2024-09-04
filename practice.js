@@ -188,14 +188,114 @@
 // 	console.log('somodrer pani khaite pari na');
 // }
 
-const name = 'akash';
-const name1 = 'AKash';
+// const name = 'akash';
+// const name1 = 'AKash';
 
-if (name.toUpperCase() === name1.toUpperCase()) {
-	console.log('My name is Akash');
-}
-else {
-	console.log('My name is akash');
+// if (name.toUpperCase() === name1.toUpperCase()) {
+// 	console.log('My name is Akash');
+// }
+// else {
+// 	console.log('My name is akash');
+// }
+
+// let name = 'Akash';
+// let greeting = `Hello, ${name}!`;  // "Hello, Abdul!"
+
+// console.log(greeting);
+
+// let text = "Hello, world!";
+// console.log(text.indexOf('Hello'));  // Output: 7
+
+// const address = 'andorkilla';
+// const part = address.slice(2,6);
+
+// console.log(part);
+
+// const sentence = 'I am a good and hardworking person';
+// console.log(sentence.split('a'));
+
+// const friendsStr = ['rahim,kahim,dahim,lahim,fahim,sahim'];
+// const friends = friendsStr.split(',');
+// console.log(friends);
+// console.log(friendsStr.join('|'));
+
+// const realFriend = [ 'rahim', 'kahim', 'dahim', 'lahim', 'fahim', 'sahim' ];
+// console.log(realFriend.join());
+// console.log(realFriend.join('|'));
+// console.log(realFriend.join('-'));
+
+// const first = 'Abid';
+// const last = 'Navid';
+
+// const fullName = first + last ;
+// console.log(fullName);
+// const fullName1 = first + ' ' + last;
+// console.log(fullName1);
+// const fullName2 = first.concat(' ').concat(last);
+// console.log(fullName2);
+
+
+//includes 
+// console.log(last.includes('x'));
+
+// const sentence = 'I am learning web deb.';
+
+
+// let reverse = '';
+// for (const letter of sentence) {
+// 	// console.log(letter);
+// 	reverse = letter + reverse;
+// }
+// console.log(reverse);
+
+// const sentence = 'I am learning web dev ';
+
+// let rev = '';
+// for (let i = 0; i < sentence.length; i++) {
+
+	// console.log(i);
+	// console.log(sentence[i]);
+// 	const letter = sentence[i];
+// 	rev = letter + rev;
+// }
+// console.log(rev);
+
+// const reversed = sentence.split('').reverse().join('');
+// console.log(reversed);
+
+// const word = 'I am Abdul Mazid Akash';
+
+// let rev = '';
+// for (const sentence of word) {
+// 	rev = sentence+ rev;
+	// console.log(word.length);
+// }
+// console.log(rev);
+
+// const sentence =  'I am learning Web dev';
+
+// let rev = '';
+
+// for (let i = 0; i <= sentence.length; i++) {
+// 	const word = sentence[i];
+// 	rev = word + rev;
+// }
+// console.log(rev);
+
+const person = {
+	name: 'Akash',
+	profession:  'web dev',
+	salary: 000,
+	married: false,
+	'fav places': ['bandorbon', 'saintmartin', 'kuakata']
+
 }
 
+console.log(person);
+person.salary = 30000;
+
+console.log(person);
+person['age'] = 26;
+person['fav places'] = ['maldives', 'bali', 'pataya'];
+console.log(person);
 
