@@ -692,3 +692,208 @@
 // 	n++;
 // }
 // while( n < 5)
+
+
+
+//fundamental of function module - 21 practice start -----------------------
+// function sum (x, y) {
+// 	const result = x + y;
+// 	return result;
+// }
+
+// const total =  sum (5, 4);
+// console.log(total);
+
+// function num (a, b) {
+// 	const result = a + b;
+// 	return result;
+// }
+
+// const total1 = num  (4, 5);
+// console.log(total1);
+
+// function fanOfKor() {
+// 	console.log('bosa theke uthe dara');
+// 	console.log('fan ta bondo kor');
+// 	console.log('hand wash kor');
+// 	console.log('jorina');
+// }
+
+// fanOfKor();
+
+// function square (number) {
+// 	console.log('value of the number is: ', number);
+// 	const borgo = number * number * number ;
+// 	console.log('value of the given square parameter is: ', borgo);
+// }
+
+// square(4);
+
+// function sum (a, b, c, d) {
+// 	console.log('value of the number is', a, b, c, d);
+// 	const result = a + b + c + d;
+// 	console.log('value of the number sum: ', result);
+
+// }
+
+// sum (2, 3, 4, 4);
+
+
+// function remove (a, b, c, d) {
+// 	console.log('value of the number is: ', a, b, c, d);
+// 	const total = a - b - c - d;
+// 	console.log('value of the remove number is: ', total);
+
+// }
+
+// remove (2, 3, 4, 5);
+
+// function multiply  (num1, num2) {
+// 	const final = num1 * num2;
+// 	console.log('value of the multiply number: ', final);
+
+// }
+
+// multiply (3, 4);
+
+// function divide (i, j){
+// 	const divi = i / j;
+// 	console.log('value of the divide number: ', divi);
+
+
+// }
+// divide (2, 3);
+
+// function doubleIt (number) {
+// 	const doubled = number * 2;
+// 	console.log(number, doubled);
+// }
+
+// console.log('I will call the function');
+// doubleIt(15);
+
+// function difference (num1, num2) {
+// 	const diff = num1 - num2;
+// 	console.log(num1, num2, 'difference is',diff);
+// }
+
+// const fatherAge = 40;
+// const myAge = 10;
+
+// difference (fatherAge, myAge)
+
+// function add (j, k) {
+// 	const result =  j + k;
+// 	// return result;
+// 	console.log(result);
+// }
+
+// // const abs = add (2, 3);
+// // console.log(abs);
+
+// add(2, 3);
+
+function add (price1, price2) {
+	const total = price1 + price2;
+	return total;
+}
+
+const bill = add(5, 80);
+console.log(bill);
+
+function add2 (price1, price2) {
+	return price1 + price2;
+}
+
+const bill2 = add2 (5, 80);
+console.log(bill2);
+
+function doMath (num1, num2) {
+	const sum = num1 + num2;
+	const diff = num1 - num2;
+	const multiply = sum * diff;
+	const result = multiply / 2;
+	return result;
+
+}
+
+const result = doMath (14, 12);
+console.log(result);
+
+function isEven(number) {
+	if (number % 2 !== 0){
+		return true;
+	}
+	else  {
+		return false;
+	}
+}
+
+console.log(isEven(5));
+console.log(isEven(10));
+
+
+function evenSizedString (str) {
+	const size = str.length;
+	console.log(str, size);
+
+	if (size % 2 === 0){
+		console.log('even size');
+		return true;
+	}
+	else {
+		console.log('odd size');
+		return false;
+	}
+}
+
+evenSizedString('dhaka');
+evenSizedString('faka');
+
+function doubleOrTriple (number, doDouble) {
+	if (doDouble === true) {
+		const result = number * 2;
+		return result;
+	}
+	else {
+		const result = number * 3;
+		return result;
+	}
+}
+console.log(doubleOrTriple(4, true));
+console.log(doubleOrTriple(4, false));
+
+function numberOfElements (numbers) {
+	const len = numbers.length;
+	return len;
+}
+
+numberOfElements([23, 2, 23, 42, 245]);
+
+function sumOfNumbers (numbers) {
+	let sum = 0;
+	for (const number of numbers) {
+		console.log(number);
+		sum = sum + number;
+	}
+	return sum;
+}
+
+const numbs = [2, 3, 5, 3];
+const sum = sumOfNumbers(numbs);
+console.log('sum of numbers is ', sum);
+
+function evenNumbersOnly (numbers) {
+	const evens = [];
+	for (const number of numbers){
+		if (number % 2 === 0){
+			console.log(number);
+			evens.push(number);
+		}
+	}
+	return  evens;
+}
+
+const number1 = [2, 3, 6, 4];
+const result1 = evenNumbersOnly(number1);
+console.log(result1);
