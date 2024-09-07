@@ -898,18 +898,244 @@
 // const result1 = evenNumbersOnly(number1);
 // console.log(result1);
 
-function sumOfNumbers  (numbers) {
-	let sum = 0;
-	for (const number of numbers) {
-		console.log(number);
-		sum = sum + number;
+// function sumOfNumbers  (numbers) {
+// 	let sum = 0;
+// 	for (const number of numbers) {
+// 		console.log(number);
+// 		sum = sum + number;
 
-	}
-	return sum;
+// 	}
+// 	return sum;
 
-}
+// }
 
-const number = [2, 43, 4];
-const sum = sumOfNumbers(number);
-console.log('sum of the number is ', sum);
+// const number = [2, 43, 4];
+// const sum = sumOfNumbers(number);
+// console.log('sum of the number is ', sum);
 
+
+//probling solving part 1
+
+// function isLeafYear(year) {
+// 	if (year % 4 === 0) {
+// 		return true;
+// 	}
+// 	else{
+// 		return false;
+// 	}
+// }
+
+// const isLipi = isLeafYear(2052);
+// console.log(isLipi);
+
+
+// function isLeafYear2 (year) {
+// 	if (year % 100 !== 0 && year % 4 === 0){
+// 		return true;
+// 	}
+// 	else if (year % 400 === 0){
+// 		return true;
+// 	}
+// 	else{
+// 		return false
+// 	}
+// }
+
+// const islipi2 = isLeafYear2(2100);
+// const islipi3 = isLeafYear2(2400);
+// const islipi4 = isLeafYear2(1900);
+// const islipi5 = isLeafYear2(2052);
+
+
+// console.log(islipi2, islipi3, islipi4, islipi5);
+
+// function oddAverage(numbers) {
+// 	let odds = [];
+// 	for (const number of  numbers){
+// 		if (number % 2  === 1){
+// 			number.push(odds)
+// 		}
+		
+// 	}
+// }
+
+// const numbers = [2, 3, 3, 4, 5, 43, 33, 22, 21, 45,  32];
+// const avg = oddAverage(numbers);
+// console.log('odd average number: ', avg);
+
+// function oddAverage (numbers) {
+// 	let odds = [];
+// 	for(const number of numbers) {
+// 		if (number % 2 === 1){
+// 			console.log(number);
+// 			odds.push(number)
+// 		}
+// 	}
+
+// 	let sum = 0;
+// 	for (const number of odds) {
+// 		sum = sum + number;
+
+// 	}
+// 	const count = odds.length;
+// 	console.log(sum, count);
+// 	const avg = sum / count;
+// 	return avg;
+// }
+// const array = [5, 34, 45, 23, 42, 53, 56];
+// const avg = oddAverage(array);
+// console.log('odd average number', avg);
+
+
+// function evenAverage (numbers) {
+// 	let evens = [];
+// 	for (const number of numbers){
+// 		if (number % 2 === 0){
+// 			evens.push(number);
+// 			console.log(number);
+// 		}
+// 	}
+// 	let sum = 0;
+// 	for (const number of evens){
+// 		sum = sum + number;
+
+// 	}
+// 	const count = evens.length;
+// 	console.log(sum, count);
+// 	const avg = sum / count;
+// 	return avg;
+// }
+
+// const array = [2, 43, 45, 32, 42, 53, 56];
+// const avg = evenAverage(array);
+// console.log('even number of the array average: ', avg);
+
+//---------------------------
+
+// function noDuplicate (name){
+// 	console.log(name);
+// 	let doubled = [];
+// 	for (const item of name){
+// 		if (doubled === true){
+// 			doubled.pop(item);
+// 		}
+// 	}
+// 	return doubled;
+// }
+
+// const numbers = [1, 3, 4, 5, 6, 2, 4, 3, 4];
+// const duplicate = noDuplicate(numbers);
+// console.log('duplicate number find', duplicate);
+
+// let x = 5;
+// let y = 7;
+
+// console.log(x, y);
+
+// let temp = x;
+// x = y;
+// y = temp;
+// console.log(x, y);
+
+// const date = new Date('2024-03-18');
+// console.log(date.getDay());
+// console.log(date.getDate());
+// console.log(date.getTime());
+// console.log(date.getMonth());
+// console.log(date.getFullYear());
+// console.log(date.getTimezoneOffset());
+// console.log(date.toLocaleString('en-GB'));
+// console.log(date.toLocaleDateString('en-GB'));
+// console.log(date.toDateString('en-GB'));
+// console.log(date.toUTCString('en-GB'));
+
+// console.log(Math.random());
+
+// function getRandomNumber (){
+// 	let result = Math.floor(Math.random() * 11 + 10);
+// 	return result;
+// }
+
+// console.log(getRandomNumber());
+
+// function evenAverage(numbers) {
+// 	let evens = [];
+// 	for (const number of numbers){
+// 		// console.log(number);
+// 		if (number % 2 === 0){
+// 			console.log(evens);
+// 			evens.push(number);
+// 		}
+// 	}
+
+// 	let sum = 0;
+// 	for (let number of evens){
+// 		sum = sum + number;
+// 	}
+
+// 	const count = evens.length;
+// 	console.log(sum, evens);
+// 	const avg = sum / count;
+// 	return avg;
+// }
+
+// const array = [2, 43, 45, 65, 65, 44, 32, 12];
+// const avg = evenAverage(array);
+// console.log('even average number: ', avg);
+
+
+
+//  function getRandomNumber (){
+// 		let result = Math.floor(Math.random() * 11 + 10);
+// 		return result;
+// 	}
+	
+// 	console.log(getRandomNumber());
+
+// console.log((Math.random() * 11));
+
+// function countVowels (str) {
+	// let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O',  'U'];
+
+// 	let count = 0;
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (vowels.includes(str[i])) {
+// 		  count++;
+// 		}
+// 	  }
+// 	return count;
+// }
+
+// const result = countVowels('hello world bangladesh');
+// console.log(result);
+
+// function countVowels (str) {
+// 	let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O',  'U'];
+
+// 	let count = 0;
+// 	for (let number of str){
+// 		if (vowels.includes(number)){
+// 			count++;
+// 		}
+// 	}
+// 	return count;
+// }
+
+// const result = countVowels('Hello Bangladesh here');
+// console.log(result);
+
+
+// function findLongestWord (str) {
+// 	let words = str.split(' ');
+// 	let logestWord = '';
+// 	for (let word of words) {
+// 		if (word.length > logestWord.length){
+// 			logestWord = word;
+// 		}
+// 	}
+// 	return logestWord;
+// }
+
+// let sentence = 'I am learning programming to become a programmer';
+// let longest = findLongestWord(sentence);
+// console.log(longest);

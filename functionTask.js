@@ -25,18 +25,18 @@
 // console.log(multiplyOrDivide(55));
 
 //practice task 3: solution
-function make_avg  (array) {
-	// console.log(make_avg);
-	let size = array.length;
-	let sum = 0;
-	for (let number of array){
-		let sum = sum + number;
-	}
-	let average = sum / size;
-	return average;
+// function make_avg  (array) {
+// 	// console.log(make_avg);
+// 	let size = array.length;
+// 	let sum = 0;
+// 	for (let number of array){
+// 		let sum = sum + number;
+// 	}
+// 	let average = sum / size;
+// 	return average;
 
-}
+// }
 
-const num = [2, 3, 4, 3, 3];
-const result = make_avg(num);
-console.log(result);
+// const num = [2, 3, 4, 3, 3];
+// const result = make_avg(num);
+// console.log(result);
