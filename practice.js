@@ -793,107 +793,123 @@
 
 // add(2, 3);
 
-function add (price1, price2) {
-	const total = price1 + price2;
-	return total;
-}
+// function add (price1, price2) {
+// 	const total = price1 + price2;
+// 	return total;
+// }
 
-const bill = add(5, 80);
-console.log(bill);
+// const bill = add(5, 80);
+// console.log(bill);
 
-function add2 (price1, price2) {
-	return price1 + price2;
-}
+// function add2 (price1, price2) {
+// 	return price1 + price2;
+// }
 
-const bill2 = add2 (5, 80);
-console.log(bill2);
+// const bill2 = add2 (5, 80);
+// console.log(bill2);
 
-function doMath (num1, num2) {
-	const sum = num1 + num2;
-	const diff = num1 - num2;
-	const multiply = sum * diff;
-	const result = multiply / 2;
-	return result;
+// function doMath (num1, num2) {
+// 	const sum = num1 + num2;
+// 	const diff = num1 - num2;
+// 	const multiply = sum * diff;
+// 	const result = multiply / 2;
+// 	return result;
 
-}
+// }
 
-const result = doMath (14, 12);
-console.log(result);
+// const result = doMath (14, 12);
+// console.log(result);
 
-function isEven(number) {
-	if (number % 2 !== 0){
-		return true;
-	}
-	else  {
-		return false;
-	}
-}
+// function isEven(number) {
+// 	if (number % 2 !== 0){
+// 		return true;
+// 	}
+// 	else  {
+// 		return false;
+// 	}
+// }
 
-console.log(isEven(5));
-console.log(isEven(10));
+// console.log(isEven(5));
+// console.log(isEven(10));
 
 
-function evenSizedString (str) {
-	const size = str.length;
-	console.log(str, size);
+// function evenSizedString (str) {
+// 	const size = str.length;
+// 	console.log(str, size);
 
-	if (size % 2 === 0){
-		console.log('even size');
-		return true;
-	}
-	else {
-		console.log('odd size');
-		return false;
-	}
-}
+// 	if (size % 2 === 0){
+// 		console.log('even size');
+// 		return true;
+// 	}
+// 	else {
+// 		console.log('odd size');
+// 		return false;
+// 	}
+// }
 
-evenSizedString('dhaka');
-evenSizedString('faka');
+// evenSizedString('dhaka');
+// evenSizedString('faka');
 
-function doubleOrTriple (number, doDouble) {
-	if (doDouble === true) {
-		const result = number * 2;
-		return result;
-	}
-	else {
-		const result = number * 3;
-		return result;
-	}
-}
-console.log(doubleOrTriple(4, true));
-console.log(doubleOrTriple(4, false));
+// function doubleOrTriple (number, doDouble) {
+// 	if (doDouble === true) {
+// 		const result = number * 2;
+// 		return result;
+// 	}
+// 	else {
+// 		const result = number * 3;
+// 		return result;
+// 	}
+// }
+// console.log(doubleOrTriple(4, true));
+// console.log(doubleOrTriple(4, false));
 
-function numberOfElements (numbers) {
-	const len = numbers.length;
-	return len;
-}
+// function numberOfElements (numbers) {
+// 	const len = numbers.length;
+// 	return len;
+// }
 
-numberOfElements([23, 2, 23, 42, 245]);
+// numberOfElements([23, 2, 23, 42, 245]);
 
-function sumOfNumbers (numbers) {
+// function sumOfNumbers (numbers) {
+// 	let sum = 0;
+// 	for (const number of numbers) {
+// 		console.log(number);
+// 		sum = sum + number;
+// 	}
+// 	return sum;
+// }
+
+// const numbs = [2, 3, 5, 3];
+// const sum = sumOfNumbers(numbs);
+// console.log('sum of numbers is ', sum);
+
+// function evenNumbersOnly (numbers) {
+// 	const evens = [];
+// 	for (const number of numbers){
+// 		if (number % 2 === 0){
+// 			console.log(number);
+// 			evens.push(number);
+// 		}
+// 	}
+// 	return  evens;
+// }
+
+// const number1 = [2, 3, 6, 4];
+// const result1 = evenNumbersOnly(number1);
+// console.log(result1);
+
+function sumOfNumbers  (numbers) {
 	let sum = 0;
 	for (const number of numbers) {
 		console.log(number);
 		sum = sum + number;
+
 	}
 	return sum;
+
 }
 
-const numbs = [2, 3, 5, 3];
-const sum = sumOfNumbers(numbs);
-console.log('sum of numbers is ', sum);
+const number = [2, 43, 4];
+const sum = sumOfNumbers(number);
+console.log('sum of the number is ', sum);
 
-function evenNumbersOnly (numbers) {
-	const evens = [];
-	for (const number of numbers){
-		if (number % 2 === 0){
-			console.log(number);
-			evens.push(number);
-		}
-	}
-	return  evens;
-}
-
-const number1 = [2, 3, 6, 4];
-const result1 = evenNumbersOnly(number1);
-console.log(result1);
