@@ -1139,3 +1139,58 @@
 // let sentence = 'I am learning programming to become a programmer';
 // let longest = findLongestWord(sentence);
 // console.log(longest);
+
+//  const disha = 56;
+//  const salman = 64;
+
+//  if (disha > salman){
+// 	console.log('disha will get the strawberry');
+//  }
+//  else{
+// 	console.log('salman will get the strawberry');
+//  }
+
+// function getMax(num1, num2) {
+// 	if (num1 > num2){
+// 		return 'number one is big';
+// 	}
+// 	else{
+// 		return 'number two is big';
+// 	}
+// }
+
+// const max = getMax(54, 54);
+// const max1 = getMax(54, 44);
+// const result = getMax (max, max1)
+
+// console.log('who is the boss: ', result);
+
+// const jim = 45;
+// const tim = 56;
+// const kim = 54;
+
+// if (jim > tim) {
+// 	console.log('jim is the boss');
+// }
+// else if (tim > kim){
+// 	console.log('tim is the boss');
+// }
+// else{
+// 	console.log('kim is the boss');
+// }
+
+
+function maxOfThree (num1, num2, num3){
+	if (num1 > num2){
+		return 'number one is big';
+	}
+	else if (num2 > num3){
+		return 'number two is big';
+	}
+	else{
+		return 'number three is big';
+	}
+}
+
+const max = maxOfThree(23, 420, 45);
+console.log(max);
