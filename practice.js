@@ -1250,20 +1250,117 @@
 // const wood = woodQuantity(0, 0, 1);
 // console.log(wood);
 
-function productQuantity (shirtQuantity, pantQuantity, shoeQuantity) {
+// function productQuantity (shirtQuantity, pantQuantity, shoeQuantity) {
 	
-	const shirtPrice = 500;
-	const pantPrice = 300;
-	const shoePrice = 900;
+// 	const shirtPrice = 500;
+// 	const pantPrice = 300;
+// 	const shoePrice = 900;
 
-	const shirtTotalPrice = shirtQuantity * shirtPrice;
-	const pantTotalPrice = pantQuantity * pantPrice;
-	const shoeTotalPrice = shoeQuantity * shoePrice;
+// 	const shirtTotalPrice = shirtQuantity * shirtPrice;
+// 	const pantTotalPrice = pantQuantity * pantPrice;
+// 	const shoeTotalPrice = shoeQuantity * shoePrice;
 
-	const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+// 	const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
 
-	return totalPrice;
+// 	return totalPrice;
+// }
+
+// const price = productQuantity(0, 0, 1);
+// console.log('Total Price: ', price);
+
+
+// const phones = [
+// 	{ name: 'Samsung', price: 50000, camera: '12mp', color: 'Black'},
+// 	{ name: 'Xiomi', price: 18000, camera: '12mp', color: 'Black'},
+// 	{ name: 'Iphone', price: 100000, camera: '12mp', color: 'Black'},
+// 	{ name: 'Oppo', price: 31000, camera: '12mp', color: 'Black'},
+// 	{ name: 'Walton', price: 30000, camera: '12mp', color: 'Black'},
+// 	{ name: 'HTC', price: 20000, camera: '12mp', color: 'Black'}
+// ]
+
+// function getCheapestPhone(phones){
+// 	let min = phones[0];
+// 	for (const phone of phones){
+// 		if (phone.price < min.price){
+// 			min = phone;
+// 		}
+// 	}
+// 	return min;
+// }
+
+// function getRichPhone(phones) {
+// 	let rich = phones[0];
+// 	for (const phone of phones){
+// 		if (phone.price > rich.price){
+// 			rich = phone;
+// 		}
+// 	}
+// 	return rich;
+// }
+
+// // const cheap = getCheapestPhone(phones);
+// // console.log('Cheapest one is: ', cheap);
+
+
+// const rich = getRichPhone(phones);
+// console.log('Rich one is: ', rich);
+
+// const products = [
+// 	{ Name: 'Shampoo', price: 300, quantity: 1},
+// 	{ Name: 'Chiruni', price: 100, quantity: 1},
+// 	{ Name: 'Shirt', price: 700, quantity: 0},
+// 	{ Name: 'Pant', price: 1200, quantity: 0}
+// ]
+
+// function productPrice (products) {
+// 	let total = 0;
+// 	for (const product of products){
+// 		const thisItemCost = product.price * product.quantity;
+// 		total = total + thisItemCost;
+
+// 	}
+// 	return total;
+// }
+
+// const price = productPrice(products);
+// console.log(price);
+
+function add (num1, num2){
+	return num1 + num2;
+}
+function multiply(num1, num2){
+	return num1 * num2;
+}
+function subtract (num1, num2){
+	return num1 - num2;
+}
+function divide(num1, num2){
+	return num1 / num2;
 }
 
-const price = productQuantity(0, 0, 1);
-console.log('Total Price: ', price);
+function calculator(a, b, opertion) {
+	if (opertion === 'add'){
+		return add(a, b);
+	}
+	else if (opertion === 'multiply'){
+		return multiply(a, b);
+	}
+	else if (opertion === 'subtract'){
+		return subtract(a, b);
+	}
+	else if (opertion === 'divide'){
+		return divide(a, b);
+	}
+	else{
+		return "Only 'add', 'multiply', 'subtract', 'divide' operation is allowed"
+	}
+}
+
+const calculate = calculator(4, 5, 'multiply');
+const calculate1 = calculator(4, 5, 'add');
+const calculate2 = calculator(4, 5, 'divide');
+const calculate3 = calculator(4, 5, 'subtract');
+console.log('Multiply: ', calculate);
+console.log('Add: ', calculate1);
+console.log('Divide: ', calculate2);
+console.log('Subtract: ', calculate3);
