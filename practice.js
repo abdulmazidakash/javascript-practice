@@ -1403,13 +1403,13 @@
 // const price = getPrice(5);
 // console.log(price);
 
-function getArray(array){
-	if (Array.isArray(array) === false){
-		return 'please provide an array';
-	}
-	return array[0];
-}
+// function getArray(array){
+// 	if (Array.isArray(array) === false){
+// 		return 'please provide an array';
+// 	}
+// 	return array[0];
+// }
 
-// const second = getArray(54);
-const second = getArray([2,3,6,7])
-console.log(second);
+// // const second = getArray(54);
+// const second = getArray([2,3,6,7])
+// console.log(second);
