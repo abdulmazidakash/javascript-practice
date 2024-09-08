@@ -1180,17 +1180,90 @@
 // }
 
 
-function maxOfThree (num1, num2, num3){
-	if (num1 > num2){
-		return 'number one is big';
-	}
-	else if (num2 > num3){
-		return 'number two is big';
-	}
-	else{
-		return 'number three is big';
-	}
+// function maxOfThree (num1, num2, num3){
+// 	if (num1 > num2){
+// 		return 'number one is big';
+// 	}
+// 	else if (num2 > num3){
+// 		return 'number two is big';
+// 	}
+// 	else{
+// 		return 'number three is big';
+// 	}
+// }
+
+// const max = maxOfThree(23, 420, 45);
+// console.log(max);
+
+// const heights = [23, 34, 65, 66, 76, 87, 89];
+
+// function getMax (numbers) {
+// 	let max = numbers[0];
+// 	for (const num of numbers){
+// 		// console.log(num);
+// 		if (num > max){
+// 			max = num;
+// 		}
+// 	}
+// 	return max;
+// }
+
+// const max = getMax(heights);
+// console.log('Maximum number is: ', max);
+
+
+// const heights = [23, 34, 65, 66, 76, 87, 89];
+
+// function getMax(numbers){
+// 	const min = numbers[0];
+// 	for (const num of numbers){
+// 		// console.log(num);
+// 		if (num < min){
+// 			min = num;
+// 		}
+// 	}
+// 	return min;
+// }
+
+// const min = getMax(heights);
+// console.log('Minimum heights is: ', min);
+
+// const heights = Math.max(23, 34, 65, 66, 76, 87, 89);
+// console.log(heights);
+
+
+// function woodQuantity (chairQuantity, tableQuantity, bedQuantity) {
+	
+// 	const perChairWood = 3;
+// 	const perTableWood = 10;
+// 	const perBedWood = 50;
+
+// 	const chairTotalWood = chairQuantity * perChairWood;
+// 	const tableTotalWood = tableQuantity * perTableWood;
+// 	const bedTotalWood = bedQuantity * perBedWood;
+
+// 	const totalWood = chairTotalWood + tableTotalWood + bedTotalWood ;
+
+// 	return totalWood;
+// }
+
+// const wood = woodQuantity(0, 0, 1);
+// console.log(wood);
+
+function productQuantity (shirtQuantity, pantQuantity, shoeQuantity) {
+	
+	const shirtPrice = 500;
+	const pantPrice = 300;
+	const shoePrice = 900;
+
+	const shirtTotalPrice = shirtQuantity * shirtPrice;
+	const pantTotalPrice = pantQuantity * pantPrice;
+	const shoeTotalPrice = shoeQuantity * shoePrice;
+
+	const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+
+	return totalPrice;
 }
 
-const max = maxOfThree(23, 420, 45);
-console.log(max);
+const price = productQuantity(0, 0, 1);
+console.log('Total Price: ', price);
