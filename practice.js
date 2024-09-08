@@ -1325,42 +1325,91 @@
 // const price = productPrice(products);
 // console.log(price);
 
-function add (num1, num2){
-	return num1 + num2;
-}
-function multiply(num1, num2){
-	return num1 * num2;
-}
-function subtract (num1, num2){
-	return num1 - num2;
-}
-function divide(num1, num2){
-	return num1 / num2;
+//calculator create -------------------
+
+// function add (num1, num2){
+// 	return num1 + num2;
+// }
+// function multiply(num1, num2){
+// 	return num1 * num2;
+// }
+// function subtract (num1, num2){
+// 	return num1 - num2;
+// }
+// function divide(num1, num2){
+// 	return num1 / num2;
+// }
+
+// function calculator(a, b, opertion) {
+// 	if (opertion === 'add'){
+// 		return add(a, b);
+// 	}
+// 	else if (opertion === 'multiply'){
+// 		return multiply(a, b);
+// 	}
+// 	else if (opertion === 'subtract'){
+// 		return subtract(a, b);
+// 	}
+// 	else if (opertion === 'divide'){
+// 		return divide(a, b);
+// 	}
+// 	else{
+// 		return "Only 'add', 'multiply', 'subtract', 'divide' operation is allowed"
+// 	}
+// }
+
+// const calculate = calculator(4, 5, 'multiply');
+// const calculate1 = calculator(4, 5, 'add');
+// const calculate2 = calculator(4, 5, 'divide');
+// const calculate3 = calculator(4, 5, 'subtract');
+// console.log('Multiply: ', calculate);
+// console.log('Add: ', calculate1);
+// console.log('Divide: ', calculate2);
+// console.log('Subtract: ', calculate3);
+
+
+//typeof check------------------------
+
+// function multiply (num1, num2){
+// 	if(typeof num1 !== 'number' || typeof num2 !== 'number'){
+// 		return 'please provide number'
+// 	}
+// 	return num1 * num2;
+// }
+
+// const multiply1 = multiply(2, "seven");
+// console.log(multiply1);
+
+
+// function multiply (num1, num2){
+// 	if(typeof num1 !== 'string' || typeof num2 !== 'string'){
+// 		return 'please provide string'
+// 	}
+// 	return num1 +" " +num2;
+// }
+
+// const multiply1 = multiply('Abdul', 6);
+// console.log(multiply1);
+
+// function getPrice (product){
+// 	if (typeof product !== 'object'){
+// 		return 'plese provide an object'
+// 	}
+// 	const price = product.price;
+// 	return price;
+// }
+
+// // const price = getPrice({ name: 'chulkani dandi', price: 54, color: 'blue'});
+// const price = getPrice(5);
+// console.log(price);
+
+function getArray(array){
+	if (Array.isArray(array) === false){
+		return 'please provide an array';
+	}
+	return array[0];
 }
 
-function calculator(a, b, opertion) {
-	if (opertion === 'add'){
-		return add(a, b);
-	}
-	else if (opertion === 'multiply'){
-		return multiply(a, b);
-	}
-	else if (opertion === 'subtract'){
-		return subtract(a, b);
-	}
-	else if (opertion === 'divide'){
-		return divide(a, b);
-	}
-	else{
-		return "Only 'add', 'multiply', 'subtract', 'divide' operation is allowed"
-	}
-}
-
-const calculate = calculator(4, 5, 'multiply');
-const calculate1 = calculator(4, 5, 'add');
-const calculate2 = calculator(4, 5, 'divide');
-const calculate3 = calculator(4, 5, 'subtract');
-console.log('Multiply: ', calculate);
-console.log('Add: ', calculate1);
-console.log('Divide: ', calculate2);
-console.log('Subtract: ', calculate3);
+// const second = getArray(54);
+const second = getArray([2,3,6,7])
+console.log(second);
