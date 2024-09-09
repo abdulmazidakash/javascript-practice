@@ -1500,22 +1500,68 @@
 // console.log(deleteInvalids([1, 2, -3]));
 // console.log(deleteInvalids({num:  [1, 2, 3]}));
 
-function password(obj){
+// function password(obj){
 
-	if (obj.siteName === undefined || obj.name === undefined || obj.birthYear === undefined || obj.birthYear.toString().length  !== 4){
-		return 'Inavalid'
-	}
-	let firstletter = obj.siteName[0].toUpperCase() + obj.siteName.slice(1);
-	let passwordString = firstletter + '#' + obj.name + obj.birthYear;
-	return  passwordString;
+// 	if (obj.siteName === undefined || obj.name === undefined || obj.birthYear === undefined || obj.birthYear.toString().length  !== 4){
+// 		return 'Inavalid'
+// 	}
+// 	let firstletter = obj.siteName[0].toUpperCase() + obj.siteName.slice(1);
+// 	let passwordString = firstletter + '#' + obj.name + obj.birthYear;
+// 	return  passwordString;
+// }
+
+// console.log(password({name: 'kolimuddin', birthYear: 1999, siteName: 'Google'}));
+// console.log(password({ name: 'rahat', birthYear: 2002, siteName: 'Facebook'}));
+// console.log(password({name: 'akash', birthYear: 199, siteName: 'Facebook'}));
+// console.log(password({name: 'akash', birthYear: 1999}));
+
+
+// const array = [2, 3, 4, 5, 6];
+// console.log(array.slice(1));
+
+
+// problem 5---------------------------------------
+
+// function monthlySavings(arr, livingCost){
+
+// 	if (Array.isArray(arr) === false){
+// 		return 'invalid input';
+// 	}
+// 	let totalIncome = 0;
+// 	for (let payment of arr){
+// 		if(payment >= 3000){
+// 			let tax = payment * 0.2;
+// 			totalIncome += payment - tax;
+// 		}else{
+// 			totalIncome  += payment;
+// 		}
+// 	}
+
+// 	let savings = totalIncome - livingCost;
+// 	if (savings >= 0){
+// 		return savings;
+// 	}else{
+// 		return 'earn more';
+// 	}
+// }
+
+// console.log(monthlySavings([1000, 2000, 3000], 5400));
+// console.log(monthlySavings([1000, 2000, 2500], 5000));
+// console.log(monthlySavings([900, 2700, 3400], 10000));
+// console.log(monthlySavings(100, [900, 2700, 3400]));
+
+function monthlySavings(arr, livingCost){
+
+	let totalIncome = 0;
+		for (let payment of arr){
+			if(payment >= 3000){
+				let tax = payment * 0.2;
+				totalIncome += payment - tax;
+			}else{
+				totalIncome  += payment;
+			}
+		}
+		return totalIncome;
 }
 
-console.log(password({name: 'kolimuddin', birthYear: 1999, siteName: 'Google'}));
-console.log(password({ name: 'rahat', birthYear: 2002, siteName: 'Facebook'}));
-console.log(password({name: 'akash', birthYear: 199, siteName: 'Facebook'}));
-console.log(password({name: 'akash', birthYear: 1999}));
-
-
-const array = [2, 3, 4, 5, 6];
-console.log(array.slice(1));
-
+console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400));
