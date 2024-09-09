@@ -1427,33 +1427,33 @@
 // console.log(calculateMoney(-130));
 // console.log(calculateMoney('ewtre'));
 
-function checkName(name){
-	if (typeof name !== 'string'){
-		return  'invalid';
-	}
-	let lastLetter = name.slice(-1).toLowerCase();
-	// console.log(lastLetter);
-	let result = false ;
-	let checkArray = [ 'a', 'y', 'i' , 'e' , 'o' , 'u', 'w'];
+// function checkName(name){
+// 	if (typeof name !== 'string'){
+// 		return  'invalid';
+// 	}
+// 	let lastLetter = name.slice(-1).toLowerCase();
+// 	// console.log(lastLetter);
+// 	let result = false ;
+// 	let checkArray = [ 'a', 'y', 'i' , 'e' , 'o' , 'u', 'w'];
 
-	for (let char of checkArray){
-		// console.log(char);
-		if (char === lastLetter){
-			result = true;
-		}
-	}
-	// let result = checkArray.includes(lastLetter);
+// 	for (let char of checkArray){
+// 		// console.log(char);
+// 		if (char === lastLetter){
+// 			result = true;
+// 		}
+// 	}
+// 	// let result = checkArray.includes(lastLetter);
 
-	return  result ? 'Good Name' : 'Bad Name';
+// 	return  result ? 'Good Name' : 'Bad Name';
 
 
-}
+// }
 
-console.log(checkName('salman'));
-console.log(checkName('RAFEE'));
-console.log(checkName('jhankar'));
-console.log(checkName(199));
-console.log(checkName(['Rashed']));
+// console.log(checkName('salman'));
+// console.log(checkName('RAFEE'));
+// console.log(checkName('jhankar'));
+// console.log(checkName(199));
+// console.log(checkName(['Rashed']));
 
 
 // function getPrice(product){
@@ -1467,15 +1467,55 @@ console.log(checkName(['Rashed']));
 // const price = getPrice(54);
 // console.log(price);
 
-function checkArray (array){
-	if (Array.isArray(array) === false){
-		return 'please provide an array';
+// function checkArray (array){
+// 	if (Array.isArray(array) === false){
+// 		return 'please provide an array';
+// 	}
+// 	return array[2];
+// }
+
+// // const second = checkArray([2, 3, 4]);
+// const second = checkArray(2);
+// console.log(second);
+
+
+// function deleteInvalids(array){
+// 	if (Array.isArray(array) === false){
+// 		return 'Invalid Array';
+// 	}
+// 	let numberArray = [];
+// 	for (let element of array){
+// 		// console.log(typeof element);
+// 		if(typeof element === 'number' && isNaN(element) === false){
+// 			// console.log(element);
+// 			numberArray.push(element);
+// 		}
+// 	}
+// 	return numberArray;
+
+// }
+
+// console.log(deleteInvalids([1, null, undefined, 18, -19, NaN, '12', [1, 2], { ob: 'lala'}]));
+// console.log(deleteInvalids(['1', {num:2}, NaN]));
+// console.log(deleteInvalids([1, 2, -3]));
+// console.log(deleteInvalids({num:  [1, 2, 3]}));
+
+function password(obj){
+
+	if (obj.siteName === undefined || obj.name === undefined || obj.birthYear === undefined || obj.birthYear.toString().length  !== 4){
+		return 'Inavalid'
 	}
-	return array[2];
+	let firstletter = obj.siteName[0].toUpperCase() + obj.siteName.slice(1);
+	let passwordString = firstletter + '#' + obj.name + obj.birthYear;
+	return  passwordString;
 }
 
-// const second = checkArray([2, 3, 4]);
-const second = checkArray(2);
-console.log(second);
+console.log(password({name: 'kolimuddin', birthYear: 1999, siteName: 'Google'}));
+console.log(password({ name: 'rahat', birthYear: 2002, siteName: 'Facebook'}));
+console.log(password({name: 'akash', birthYear: 199, siteName: 'Facebook'}));
+console.log(password({name: 'akash', birthYear: 1999}));
 
+
+const array = [2, 3, 4, 5, 6];
+console.log(array.slice(1));
 
