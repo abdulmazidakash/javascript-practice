@@ -1413,3 +1413,69 @@
 // // const second = getArray(54);
 // const second = getArray([2,3,6,7])
 // console.log(second);
+
+// function calculateMoney (ticketSale) {
+// 	if  (ticketSale < 0 || typeof ticketSale !== 'number'){
+// 		return 'Invalid Number';
+// 	}
+// 	return (ticketSale * 120) - (500 + (8 * 50));
+// }
+
+// console.log(calculateMoney(10));
+// console.log(calculateMoney(1055));
+// console.log(calculateMoney(93));
+// console.log(calculateMoney(-130));
+// console.log(calculateMoney('ewtre'));
+
+function checkName(name){
+	if (typeof name !== 'string'){
+		return  'invalid';
+	}
+	let lastLetter = name.slice(-1).toLowerCase();
+	// console.log(lastLetter);
+	let result = false ;
+	let checkArray = [ 'a', 'y', 'i' , 'e' , 'o' , 'u', 'w'];
+
+	for (let char of checkArray){
+		// console.log(char);
+		if (char === lastLetter){
+			result = true;
+		}
+	}
+	// let result = checkArray.includes(lastLetter);
+
+	return  result ? 'Good Name' : 'Bad Name';
+
+
+}
+
+console.log(checkName('salman'));
+console.log(checkName('RAFEE'));
+console.log(checkName('jhankar'));
+console.log(checkName(199));
+console.log(checkName(['Rashed']));
+
+
+// function getPrice(product){
+// 	if (typeof product !== 'object'){
+// 		return 'please provide an object';
+// 	}
+// 	return product.price;
+// }
+
+// // const price = getPrice({ name: 'chulkani dandi', price: 35, color: 'black'});
+// const price = getPrice(54);
+// console.log(price);
+
+function checkArray (array){
+	if (Array.isArray(array) === false){
+		return 'please provide an array';
+	}
+	return array[2];
+}
+
+// const second = checkArray([2, 3, 4]);
+const second = checkArray(2);
+console.log(second);
+
+
