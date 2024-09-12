@@ -1719,7 +1719,7 @@ console.log('Akash');
 
 // console.log(name1.join(' | '));
 
-const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
 
 // const reversed = colors.reverse();
 // console.log(reversed);
@@ -1733,13 +1733,99 @@ const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
 
 // console.log(numbers);
 
-for (let i = 0; i < colors.length; i++){
-	console.log(i);
-	console.log(colors[i]);
-}
+// console.log(colors.sort());
 
-for (let i = colors.length - 1; i  >= 0; i--){
-	console.log(i);
-	console.log(colors[i]);
-}
+// for (let i = 0; i < colors.length; i++){
+// 	console.log(i);
+// 	console.log(colors[i]);
+// }
+
+// for (let i = colors.length - 1; i  >= 0; i--){
+// 	console.log(i);
+// 	console.log(colors[i]);
+// }
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+
+// let color_rev = [];
+// for  (let color of colors){
+// 	// color_rev.push(color);
+// 	color_rev.unshift(color);
+// 	// console.log(color);
+// }
+
+// console.log(color_rev);
+
+// let num = 0;
+// while(num < 5){
+// 	console.log('Akash', num);
+// 	num++;
+// }
+
+// for (let message = 1; message <= 60; message++){
+// 	console.log('i will invest at least 6 hrs every single day for next 60 days', message);
+// }
+// let sum = 0;
+
+// for (let odd = 61; odd <= 100; odd++){
+// 	// console.log(odd);
+
+// 	if (odd % 2 === 1){
+// 		sum = sum + odd;
+// 		console.log(sum,'odd number', odd);
+// 	}
+// }
+// let sum = 0;
+// for (let even = 78; even <= 98; even++){
+// 	console.log(even);
+
+// 	if (even % 2 === 0){
+// 		console.log('even', even);
+// 		sum = sum + even;
+// 		// sum += even;
+// 		console.log('sum', sum);
+// 	}
+// }
+
+// let sum = 0;
+// for (let odd = 91; odd <= 129; odd++){
+// 	console.log(odd);
+
+// 	if (odd % 2  === 1){
+// 		console.log('odd number', odd);
+// 		sum += odd;
+// 		console.log('odd number sum', sum);
+// 	}
+// }
+
+// let sum = 0;
+// for (let even = 51; even <= 85; even++){
+// 	console.log(even);
+
+// 	if (even % 2 === 0){
+// 		console.log('even number', even);
+// 		sum += even;
+// 		console.log('sum of even number', sum);
+// 	}
+// }
+
+// let message = 1;
+// while(message <= 60){
+// 	console.log('I will invest at least 6 hrs every single day for next 60 days!', message);
+// 	message++;
+// }
+
+// let sum = 0;
+// let odd = 61;
+// while(odd <= 100){
+// 	// console.log(odd);
+// 	odd ++;
+
+// 	if (odd % 2 === 1){
+// 		console.log('odd number', odd);
+// 		sum += odd;
+// 		console.log('sum odd number', sum);
+// 	}
+
+// }
+
 
