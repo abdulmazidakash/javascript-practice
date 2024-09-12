@@ -1661,3 +1661,85 @@ console.log('Akash');
 // console.log(calculateTax(7000, 7000));
 // console.log(calculateTax(-5000, 2000));
 // console.log(calculateTax(6000, -1500 ));
+
+//after assignment practice js
+
+// let fruits = ['mango', 'apple', 'orange', 'pineApple', 'jackFruit'];
+
+// console.log(fruits);
+// console.log(fruits.indexOf('apple'));
+
+// // fruits[2] = 'jambura';
+// const fruit = fruits[2];
+// console.log(fruit);
+// console.log(fruits);
+
+
+// let destination = ['bandorban', 'cox bazar', 'rangamati'];
+
+// let destination1 = ['sea beach', 'kua kata', 'jaflong'];
+
+// let touristDestination = destination.concat(destination1);
+
+// console.log(touristDestination);
+
+// // console.log(destination.concat(destination1));
+
+// touristDestination.pop();
+// console.log(touristDestination);
+
+// let books = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'MONGODB', 'BOOTSTRAP', 'TAILWIND CSS', 'DAISY UI'];
+
+// console.log(books);
+// console.log(books.includes('JAVASCRIPT'));
+
+// let sports = ['football', 'cricket', 'badminton', 'tennis'];
+
+// let numbers = [1, 2, 4, 5, 6];
+
+// let type = [true, false, 'boolean', 'numbers', 3, 2];
+
+// let blank = [];
+// let null1 = (2, 4, 6);
+
+// console.log(Array.isArray(sports));
+// console.log(Array.isArray(numbers));
+// console.log(Array.isArray(type));
+// console.log(Array.isArray(blank));
+// console.log(Array.isArray(null1));
+
+// let name = ['akash', 'noman', 'jeion', 'tuhin', 'toru', 'shakil', 'junaeid'];
+
+// let name1 = ['robiul', 'kamrul', 'shawon', 'kawser', 'ovijit'];
+
+// console.log(name.concat(name1));
+
+// console.log(name.splice(2, 4));
+// console.log(name1.slice(2, 4));
+
+// console.log(name1.join(' | '));
+
+const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+
+// const reversed = colors.reverse();
+// console.log(reversed);
+// console.log(colors.reverse());
+
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+
+// for  (let numbers = 0;  numbers % 2  === 0; numbers++){
+// 	console.log(numbers);
+// }
+
+// console.log(numbers);
+
+for (let i = 0; i < colors.length; i++){
+	console.log(i);
+	console.log(colors[i]);
+}
+
+for (let i = colors.length - 1; i  >= 0; i--){
+	console.log(i);
+	console.log(colors[i]);
+}
+
