@@ -1,3 +1,5 @@
+console.log('Akash');
+
 //for-fo.js
 // const numbers = [12, 21, 12, 1233, 243];
 
@@ -1567,32 +1569,95 @@
 // console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400));
 
 
-function monthlySavings(arr, livingCost){
-	if(Array.isArray(arr) === false){
-		return 'invalid input'
-	}
-	let totalIncome = 0;
-	for (let payment of arr){
-		if (payment >= 3000){
-			let tax = payment * 0.2;
-			totalIncome += payment - tax;
-		}else{
-			totalIncome += payment;
-		}
+// function monthlySavings(arr, livingCost){
+// 	if(Array.isArray(arr) === false){
+// 		return 'invalid input'
+// 	}
+// 	let totalIncome = 0;
+// 	for (let payment of arr){
+// 		if (payment >= 3000){
+// 			let tax = payment * 0.2;
+// 			totalIncome += payment - tax;
+// 		}else{
+// 			totalIncome += payment;
+// 		}
 
-	}
-	let savings = totalIncome - livingCost;
-	if (savings >= 0){
-		return savings;
-	}
-	else{
-		return 'earn more';
-	}
+// 	}
+// 	let savings = totalIncome - livingCost;
+// 	if (savings >= 0){
+// 		return savings;
+// 	}
+// 	else{
+// 		return 'earn more';
+// 	}
 
-}
+// }
 
-console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400));
-console.log(monthlySavings([ 1000 , 2000 , 2500 ] , 5000));
+// console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400));
+// console.log(monthlySavings([ 1000 , 2000 , 2500 ] , 5000));
 
-console.log(monthlySavings([ 900 , 2700 , 3400] , 10000));
-console.log(monthlySavings(100, [ 900 , 2700 , 3400]));
+// console.log(monthlySavings([ 900 , 2700 , 3400] , 10000));
+// console.log(monthlySavings(100, [ 900 , 2700 , 3400]));
+
+
+// var x = null
+// var x = NaN;
+// var x = isNaN;
+// var x = isFinite;
+// var x = typeof;
+// var x = Math.max;
+
+// truthy value = true, 'hello', number
+// falsy value = false, '', 0
+
+// var x = "akash";
+// x = x + 2;
+// x +=2;
+
+// var x = 6;
+
+// console.log(isNaN(x));
+// isRaining === true ? console.log('will not go outside') : console.log('will go outside');
+
+// function noDuplicate(array){
+//  let unique  = [];
+//  for (const item of array){
+// 	if (unique.includes(item) === false){
+// 		unique.push(item);
+// 	}
+
+//  }
+//  return unique;
+// }
+
+
+
+// const result = [2,4,5,7,6,3,2,4,5];
+// console.log(noDuplicate(result));
+
+//batch 10 assignment solution -------------------
+//problem 1----------------------------------
+
+
+// function calculateTax (income, expense){
+
+// 	// if (0 <= income || 0 <= expense || expense > income ){
+// 	// 	return "Invalid Input";
+// 	// }
+	
+// 	const incomeAndCostDifference = income - expense;
+
+// 	const tax = incomeAndCostDifference * 0.2;
+
+
+
+// 	return tax;
+	
+// }
+
+// console.log(calculateTax(10000, 3000));
+// console.log(calculateTax(34000, 1753));
+// console.log(calculateTax(5000, 1500));
+// console.log(calculateTax(7000, 7000));
+// console.log(calculateTax(-5000, 2000));
+// console.log(calculateTax(6000, -1500 ));
