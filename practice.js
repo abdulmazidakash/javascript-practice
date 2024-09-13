@@ -1863,9 +1863,38 @@ let rev = '';
 // }
 // console.log(reverse);
 
-for (let i = 0; i < sentence.length; i++){
-	// console.log(i);
-	let letter = sentence[i];
-	rev = letter + rev;
+// for (let i = 0; i < sentence.length; i++){
+// 	// console.log(i);
+// 	let letter = sentence[i];
+// 	rev = letter + rev;
+// }
+// console.log(rev);
+
+// let lang = 'bangla';
+
+// function learn (topic){
+// 	lang = topic;
+// 	console.log(`I am learning ${topic}`);
+// }
+
+// learn('JavaScript');
+// console.log(`I know ${lang}`);
+
+// function loduRandom(){
+// 	let result = Math.ceil(Math.random() * 6)
+// 	return result;
+// }
+
+// console.log(loduRandom());
+
+
+function isLeafYear(year){
+	if ((year % 400  === 0) || ((year % 4 === 0) && (year % 100 !== 0))){
+		return `${year} is a leaf year`;
+	}else{
+		return `${year} is not a leaf year`;
+	}
 }
-console.log(rev);
+
+console.log(isLeafYear(2600));
+console.log(isLeafYear(2800));
