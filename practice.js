@@ -1828,4 +1828,44 @@ console.log('Akash');
 
 // }
 
+// let n = 0;
+// while(n < 15){
+// 	n++;
+// 	if (n % 5 !== 0){
+// 		continue;
+// 	}
+// 	console.log(n);
+// }
 
+
+// let n = 0;
+// do {
+// 	console.log(n);
+// 	n++
+// }
+// while(n < 5);
+
+// for (let i = 1; i <= 200; i++){
+// 	console.log(i);
+// 	// if (i >= 101){
+// 	// 	break;
+
+// 	// }
+// 	// console.log(i);
+// }
+
+let sentence = 'I am a wev developer';
+// let reverse = '';
+let rev = '';
+// for (let letter of sentence){
+// 	reverse = letter + reverse;
+
+// }
+// console.log(reverse);
+
+for (let i = 0; i < sentence.length; i++){
+	// console.log(i);
+	let letter = sentence[i];
+	rev = letter + rev;
+}
+console.log(rev);
