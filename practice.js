@@ -1888,13 +1888,14 @@ let rev = '';
 // console.log(loduRandom());
 
 
-function isLeafYear(year){
-	if ((year % 400  === 0) || ((year % 4 === 0) && (year % 100 !== 0))){
-		return `${year} is a leaf year`;
-	}else{
-		return `${year} is not a leaf year`;
-	}
-}
+// function isLeafYear(year){
+// 	if ((year % 400  === 0) || ((year % 4 === 0) && (year % 100 !== 0))){
+// 		return `${year} is a leaf year`;
+// 	}else{
+// 		return `${year} is not a leaf year`;
+// 	}
+// }
 
-console.log(isLeafYear(2600));
-console.log(isLeafYear(2800));
+// console.log(isLeafYear(2600));
+// console.log(isLeafYear(2800));
+// console.log(isLeafYear(2900));
