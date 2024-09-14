@@ -346,4 +346,165 @@ function evenAverage(numbers){
 
 }
 
-console.log(evenAverage([2, 3, 4, 5, 10, 8]));
+// console.log(evenAverage([2, 3, 4, 5, 10, 8]));
+
+// duplicate name check 
+
+function noDuplicateName(name){
+
+	let unique = [];
+	for (let item of name){
+		// console.log(item);
+		if (unique.includes(item) === false){
+			unique.push(item);
+			// console.log(unique);
+		}
+
+	}
+	return unique;
+}
+
+// console.log(noDuplicateName(['abul', 'babul', 'cabul', 'dabul', 'abul', 'kabul', 'cabul', 'dabul']));
+
+function noDuplicateNumbers(numbers){
+	
+	let uniqueNumbers = [];
+	for (let item of numbers){
+		// console.log(item);
+		if (uniqueNumbers.includes(item)  === false){
+			uniqueNumbers.push(item);
+		}
+	}
+	return uniqueNumbers;
+}
+
+// console.log(noDuplicateNumbers([2, 4, 5, 65, 3, 4, 2, 4]));
+
+// console.log(Math.);
+
+function getRandomNumber() {
+    let min = 1;
+    let max = 100;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// console.log("লটারি নম্বর:", getRandomNumber());
+
+
+function selectRandomWinner(names) {
+    // let randomIndex = Math.floor(Math.random() * names.length);
+    // return names[randomIndex];
+
+	return names[Math.floor(Math.random() * names.length)];
+}
+
+// let participants = ["Akash", "Rahim", "Karim", "Sujon", "Sadia"];
+// console.log("লটারি বিজয়ী:", selectRandomWinner(["Akash", "Rahim", "Karim", "Sujon", "Sadia"]));
+
+// console.log(Math.random);
+
+function random(names){
+
+	let randomIndex = Math.floor(Math.random() * names.length);
+
+	return names[randomIndex];
+}
+
+// console.log('Lottary winner: ',random( ['Akash', 'Noman', 'Jeion', 'Tuhin', 'Junaeid']));
+
+function  draw(names){
+	
+	// return names[Math.floor(Math.random() * names.length)];
+
+	return `draw winner: ${names[Math.floor(Math.random() * names.length)]}`;
+}
+
+// console.log(draw(['Akash', 'Noman', 'Jeion', 'Tuhin']));
+// console.log('draw winner;', draw(['Akash', 'Noman', 'Jeion', 'Tuhin']));
+
+function random(numbers){
+	let min = 10;
+	// let max = 100;
+	let max = 20;
+
+
+	let result = Math.floor(Math.random() * (max - min + 1) + min);
+
+	return result;
+}
+
+// console.log(random());
+
+function raffleDraw(names){
+
+	let random = Math.floor(Math.random() * names.length);
+
+	return `Raffle Draw Winner: ${names[random]}`;
+} 
+
+// console.log(raffleDraw(['Akash', 'Noman', 'Tuhin', 'Jeion']));
+
+// console.log(new Date);
+
+// let x = 5;
+// let y = 7;
+
+// console.log(x, y);
+
+// let temp = x;
+// x = y;
+// y = temp;
+
+// console.log(x, y);
+
+// [x, y] = [y, x];
+// console.log(x, y);
+
+//problem solving task 1
+function celsiusToFahrenheit(celsius){
+
+	let fahrenheit = (celsius * 9/5) + 32;
+
+	return fahrenheit;
+	
+}
+
+// console.log(celsiusToFahrenheit(2));
+
+// problem solving task 2
+
+function duplicateCount(numbers, find){
+
+	let duplicate = 0;
+
+	for (let item of numbers){
+		// console.log(item);
+
+		if (item === find){
+			duplicate++;
+
+		}
+	}
+	return duplicate;
+}
+
+// console.log(duplicateCount([5,6,11,12,98, 5], 5));
+// console.log(duplicateCount([5,6,11,12,98, 5], 25));
+
+
+//problem task 5
+
+function randomNumber(){
+
+	let min = 11;
+	let max = 20;
+
+	let random = Math.floor(Math.random() * (max - min + 1) + min);
+
+	return random;
+
+
+}
+
+// console.log(randomNumber());
+
