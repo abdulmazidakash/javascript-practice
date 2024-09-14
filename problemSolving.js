@@ -538,4 +538,24 @@ function findLongestWord(sentence){
 	return longestWord;
 }
 
-console.log(findLongestWord('I am learning Programming to become a programmer'));
+// console.log(findLongestWord('I am learning Programming to become a programmer'));
+
+
+//problem solving part 2
+
+function woodQuantity(chairQuantity, tableQuantity, bedQuantity){
+
+	const perChairWood = 3;
+	const perTableWood = 20;
+	const perBedWood = 50;
+
+	const chairTotalWood = chairQuantity * perChairWood;
+	const tableTotalWood = tableQuantity * perTableWood;
+	const bedTotalWood = bedQuantity * perBedWood;
+
+	const totalWood = chairTotalWood + tableTotalWood + bedTotalWood ;
+
+	return totalWood;
+}
+
+console.log(woodQuantity(0,0,1));
