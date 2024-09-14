@@ -508,3 +508,34 @@ function randomNumber(){
 
 // console.log(randomNumber());
 
+function vowelCheck(string){
+
+	let count = 0;
+	let vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+	for(let item of string){
+		// console.log(item);
+		if (vowel.includes(item)){
+			count++;
+		}
+	}
+	return count;
+}
+
+// console.log(vowelCheck('I love Bangladesh'));
+
+
+function findLongestWord(sentence){
+
+	let words = sentence.split(' ');
+	let longestWord = words[0];
+
+	for (let word of words){
+		// console.log(word);
+		if (word.length > longestWord.length){
+			longestWord = word;
+		}
+	}
+	return longestWord;
+}
+
+console.log(findLongestWord('I am learning Programming to become a programmer'));
