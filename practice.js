@@ -1901,4 +1901,64 @@ let rev = '';
 // console.log(isLeafYear(2900));
 
 
+function getLodo(min, max) {
 
+	return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+// console.log(getLodo(1,6));
+
+// const students = ['Jankar', 'Sumit', 'Rokib', 'Ferdous', 'Gias', 'Akash'];
+
+// console.log(students.sort());
+
+// const rollNumbers = [1, 3, 5, 56, 6, 4, 43, 56];
+// console.table(rollNumbers.Math.min());
+// console.log(rollNumbers.sort(function(a, b){
+	// return a - b;
+// }));
+
+function isLeapYear(year){
+	if (year % 4 === 0 || year % 100 === 0 || year % 100 === 0){
+		console.log(`${year} year is leap year`);
+	}else{
+		console.log(`${year} year is not a leap year`);
+	}
+	return;
+}
+
+// isLeapYear(2052);
+// isLeapYear(2053);
+// isLeapYear(2025);
+
+const vowels = ['a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U'];
+
+function countVowels(sentence){
+	let count = 0;
+	const letters = Array.from(sentence);
+
+	letters.forEach(function(value){
+		if(vowels.includes(value)){
+			count++;
+		}
+	})
+	return count;
+};
+
+// console.log(countVowels('I love Bangladesh'));
+// console.log(countVowels('My name is Abdul Mazid Akash'));
+
+
+function secondCountVowels(sentence){
+	let count = 0;
+	const letters = Array.from(sentence);
+
+	letters.forEach(function(value){
+		if(vowels.includes(value)){
+			count++;
+		}
+	})
+	return count;
+}
+
+console.log(secondCountVowels('I love Bangladesh'));
