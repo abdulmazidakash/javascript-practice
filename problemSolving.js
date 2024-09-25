@@ -558,4 +558,103 @@ function woodQuantity(chairQuantity, tableQuantity, bedQuantity){
 	return totalWood;
 }
 
-console.log(woodQuantity(0,0,1));
+// console.log(woodQuantity(0,0,1));
+
+//get max
+
+function getMin(numbers){
+	
+	let min = numbers[0];
+	for(let num of numbers){
+		// console.log(num);
+
+		if (num < min){
+			min = num;
+		}
+	}
+	return min;
+}
+
+// console.log(getMin([20000, 16000, 50000, 100000, 12000, 30000, 35000]));
+
+function getMax(numbers){
+
+	let max = numbers[0];
+	for (let num of numbers){
+		// console.log(num);
+
+		if (num > max){
+			max = num;
+		}
+	}
+	return max;
+}
+
+// console.log(getMax([20000, 16000, 50000, 100000, 12000, 30000, 35000]));
+
+//get cheapest phone 
+
+// let phones = [
+// 	{ name: 'xiomi', price: 18000, camera: '12mp', color: 'black'},
+// 	{ name: 'Samsung', price: 50000, camera: '12mp', color: 'black'},
+// 	{ name: 'oppo', price: 30000, camera: '12mp', color: 'black'},
+// 	{ name: 'Iphone', price: 100000, camera: '12mp', color: 'black'},
+// 	{ name: 'Walton', price: 31000, camera: '12mp', color: 'black'},
+// 	{ name: 'HTC', price: 27000, camera: '12mp', color: 'black'},
+// ]
+
+function getCheapestPhone(phones){
+
+	let min = phones[0];
+	for (let phone of phones){
+		// console.log(phone);
+
+		if (phone.price < min.price){
+			min = phone;
+		}
+	}
+	return min;
+}
+
+// const cheap = getCheapestPhone(phones);
+// console.log('Cheapest phone: ', cheap);
+
+// let products = [
+// 	{ name: 'shanpoo', price: 200},
+// 	{ name: 'chiruni', price: 50},
+// 	{ name: 'shirt', price: 500},
+// 	{ name: 'pant', price: 700}
+// ]
+
+function totalPrice(products){
+
+	let total = 0;
+	for (let product of products){
+		total = total + product.price;
+	}
+	return total;
+}
+
+// let result = totalPrice(products);
+// console.log(result);
+
+let products = [
+	{ name: 'shanpoo', price: 200, quantity: 4},
+	{ name: 'chiruni', price: 50, quantity: 1},
+	{ name: 'shirt', price: 500, quantity: 2},
+	{ name: 'pant', price: 700, quantity: 2}
+]
+function shoppingTotal(products){
+
+	let total = 0;
+	for(let product of products){
+		// console.log(product);
+		let totalCost = product.price * product.quantity;
+
+		total = total + totalCost;
+	}
+	return total;
+}
+
+// let result = shoppingTotal(products);
+// console.log(result);
