@@ -1961,4 +1961,17 @@ function secondCountVowels(sentence){
 	return count;
 }
 
-console.log(secondCountVowels('I love Bangladesh'));
+// console.log(secondCountVowels('I love Bangladesh'));
+
+
+
+const numbers = [2, 45, 56, 44, 2, 44, 55, 45, 55];
+
+const duplicates = numbers.filter(function(value, index, array){
+	// return array.indexOf (value) === index;
+	return array.indexOf (value) !== index;
+});
+
+console.table({duplicates});
+
+
