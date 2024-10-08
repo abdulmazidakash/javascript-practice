@@ -1963,8 +1963,6 @@ function secondCountVowels(sentence){
 
 // console.log(secondCountVowels('I love Bangladesh'));
 
-
-
 const numbers = [2, 45, 56, 44, 2, 44, 55, 45, 55];
 
 const duplicates = numbers.filter(function(value, index, array){
@@ -1973,5 +1971,7 @@ const duplicates = numbers.filter(function(value, index, array){
 });
 
 console.table({duplicates});
+
+console.log('hello 8 tarik');
 
 
