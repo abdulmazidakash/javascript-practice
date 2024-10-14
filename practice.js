@@ -1973,5 +1973,6 @@ const duplicates = numbers.filter(function(value, index, array){
 console.table({duplicates});
 
 console.log('hello 8 tarik');
+console.log('hello 14 tarik');
 
 
