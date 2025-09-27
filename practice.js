@@ -1963,20 +1963,40 @@ function secondCountVowels(sentence){
 
 // console.log(secondCountVowels('I love Bangladesh'));
 
-const numbers = [2, 45, 56, 44, 2, 44, 55, 45, 55];
+// const numbers = [2, 45, 56, 44, 2, 44, 55, 45, 55];
 
-const duplicates = numbers.filter(function(value, index, array){
+// const duplicates = numbers.filter(function(value, index, array){
 	// return array.indexOf (value) === index;
-	return array.indexOf (value) !== index;
-});
+// 	return array.indexOf (value) !== index;
+// });
 
-console.table({duplicates});
+// console.table({duplicates});
 
-console.log('hello 8 tarik');
-console.log('hello 14 tarik');
-console.log('hello 27 tarik');
-console.log('hello 28 tarik');
-console.log('hello 8 Nov');
-console.log('hello 9 Nov');
+// console.log('hello 8 tarik');
+// console.log('hello 14 tarik');
+// console.log('hello 27 tarik');
+// console.log('hello 28 tarik');
+// console.log('hello 8 Nov');
+// console.log('hello 9 Nov');
+
+// console.log('shakib');
+
+// const numbers = [3, 64, 4,3, 3];
+
+// console.log(numbers);
+
+// const newNumbers = [...numbers];
+
+// numbers.push(4);
+// numbers.push(45);
+
+// console.table(numbers);
+// console.table(newNumbers)
+
+
+console.log('javascript practice');
+
+
+
 
 
