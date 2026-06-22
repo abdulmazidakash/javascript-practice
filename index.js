@@ -152,16 +152,126 @@ const vowels1 = ['a', 'e', 'i', 'o', 'u', "A", "E", "I", "O", "U"];
 
 // console.log(noDuplicates(numbers))
 
-const sentence1 = "Learn with Sumit is all about teaching web development skills and techniques in an efficient and practical manner. If you are just getting started in web development, Learn with Sumit has all the tools you need to learn the newest and most popular technologies to convert you from a no stack to full stack developer. Learn with Sumit also deep dives into advanced topics using the latest best practices for you seasoned web developers.";
+// const sentence1 = "Learn with Sumit is all about teaching web development skills and techniques in an efficient and practical manner. If you are just getting started in web development, Learn with Sumit has all the tools you need to learn the newest and most popular technologies to convert you from a no stack to full stack developer. Learn with Sumit also deep dives into advanced topics using the latest best practices for you seasoned web developers.";
 
-const matches = sentence1.match(/sumit/gi);
-// console.log(matches)
-const occurrences = matches ? matches.length : 0;
-// console.log(`The word "sumit" occurs ${occurrences} times in the sentence.`);
+// const matches = sentence1.match(/sumit/gi);
+// // console.log(matches)
+// const occurrences = matches ? matches.length : 0;
+// // console.log(`The word "sumit" occurs ${occurrences} times in the sentence.`);
 
-let position = sentence1.search(/sumitS/i);
+// let position = sentence1.search(/sumitS/i);
+// // console.log(`The word "sumit" is found at position ${position} in the sentence.`);
+
+// position = position >= 0 ? position : "not found";
 // console.log(`The word "sumit" is found at position ${position} in the sentence.`);
 
-position = position >= 0 ? position : "not found";
-console.log(`The word "sumit" is found at position ${position} in the sentence.`);
 
+// linear search
+
+// const linearSearch = (array, value) =>{
+//     let length = array.length;
+
+//     for(let i = 0; i < length; i++){
+//         if(array[i] === value){
+//             return i;
+//         }
+//     };
+
+//     return 'not found!';
+// };
+
+// console.log(linearSearch(['a', 'b', 'c', 'd', 'c'], 'c'));
+
+
+//longest word in a sentence
+
+// const longestWord = names =>{
+//     let longest = '';
+
+//     for(const name of names){
+//         // console.log(name)
+//         if(name.length > longest.length){
+//             longest = name;
+//         }
+//     }
+//     return [longest, names.indexOf(longest), longest.length];
+// };
+
+//  console.log(longestWord(['Abdul Mazid Akash', 'Sumit Saha', 'learn With Sumit', 'Bangladesh', 'satyam', 'sotyarth']));
+
+// const fizzBuzz = n =>{
+//     for(let i = 1; i <= n; i++){
+//         if(i % 15 === 0){
+//             console.log('FizzBuzz');
+//         }else if(i % 3 === 0){
+//             console.log('Fizz');
+//         }else if(i % 5 === 0){
+//             console.log('Buzz');
+//         }else{
+//             console.log(i);
+//         }
+//     }
+// };
+
+// fizzBuzz(100);
+
+// const mixedArr = [
+//     "lws",
+//     undefined,
+//     "learn With Sumit",
+//     false,
+//     "",
+//     "apple",
+//     40,
+//     "k",
+//     true,
+//     "Thanks all",
+//     NaN
+// ];
+
+// const trueArray = mixedArr.filter(item => Boolean(item));
+// const trueArray = mixedArr.filter(function(el){
+//     if(el){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// })
+
+// console.table(trueArray);
+
+
+// Object থেকে falsy value কিভাবে খুঁজে বের করে বাদ দিতে পারি ?
+const obj = {
+    a: "lws",
+    b: undefined,
+    c: "learn With Sumit",
+    d: false,
+    e: "",
+    f: "apple",
+    g: 40,
+    h: "k",
+    i: true,
+    j: "Thanks all",
+    k: NaN,
+};
+
+// const truthyObject = function(obj) {
+//     for(let i in obj){
+//         if(!obj[i]) {
+//             delete obj[i];
+//         }
+//     }
+//     return obj;
+// };
+
+const truthyObject = obj =>{
+    for(let key in obj){
+        if(!obj[key]){
+            delete obj[key];
+        }
+    }
+    return obj;
+}
+
+console.log(truthyObject(obj));
