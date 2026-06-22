@@ -1994,7 +1994,7 @@ function secondCountVowels(sentence){
 // console.table(newNumbers)
 
 
-console.log('javascript practice');
+// console.log('javascript practice');
 
 
 
