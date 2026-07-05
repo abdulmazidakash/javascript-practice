@@ -438,7 +438,7 @@ const vowels1 = ['a', 'e', 'i', 'o', 'u', "A", "E", "I", "O", "U"];
 
 // const fibonacci = (n) =>{
 //     const fib = [0, 1];
-    
+
 //     for(let i = 2; i < n; i++){
 //         fib.push(fib[i - 1] + fib[i - 2]);
 //     }
@@ -638,8 +638,117 @@ const vowels1 = ['a', 'e', 'i', 'o', 'u', "A", "E", "I", "O", "U"];
 // Input: [1, [2, 3], [4, 5]] → Output: [1, 2, 3, 4, 5]
 // Hint: Use flat() or reduce() with concat().
 
-const flattenArray = (arr) =>{
-    return arr.flat();
-};
+// const flattenArray = (arr) =>{
+//     return arr.flat();
+// };
 
-console.log(flattenArray([1, [2, 3], [4, 5]]))
+// console.log(flattenArray([1, [2, 3], [4, 5]]));
+
+// const flattenArray = (arr) =>{
+//     return arr.reduce((acc, cur)=> acc.concat(cur), [])
+// };
+
+
+// console.log(flattenArray([1, [2, 3], [4, 5]]));
+// Example:
+// Input: {a: 1, b: 2, c: 3} → Output: 3
+// Hint: Use Object.keys().length.
+
+// const countObjectProperties = (n) =>{
+//     return Object.keys(n).length;
+// };
+
+// console.log(countObjectProperties({a: 1, b: 2, c: 3, d: 4}))
+
+// Example:
+// Input: {a:1}, {b:2} → Output: {a:1, b:2}
+// Hint: Use the spread operator or Object.assign().
+
+// const mergeObject = (...obj) =>{
+//     return Object.assign({}, ...obj);
+// };
+
+// console.log(mergeObject({a:1}, {b:2}));
+
+// Example:
+// Input: 15Output: 1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz
+// Hint: Check divisibility with the % operator in the right order.
+
+// const fizzBuzz = (n) => {
+//     for (let i = 0; i <= n; i++) {
+//         if (i % 15 === 0) {
+//             console.log("FizzBuzz")
+//         } else if (i % 3 === 0) {
+//             console.log("Fizz")
+//         } else if (i % 5 === 0) {
+//             console.log("Buzz")
+//         } else {
+//             console.log(i)
+//         }
+//     }
+// };
+
+// console.log(fizzBuzz(15))
+
+// const fibonacci = (n) =>{
+//     const fib = [0, 1];
+
+//     for(let i = 2; i <= n; i++){
+//         fib.push(fib[i - 1] + fib[i - 2])
+//     };
+
+//     return fib.slice(0, n);
+// };
+
+// console.log(fibonacci(7))
+
+// Example:
+// const c = makeCounter();c.increment(); c.increment();c.getCount(); // 2
+// Hint: Use a variable inside the outer function that inner functions can access
+
+// const Counter = () =>{
+//     let count = 0;
+
+//     return ()=>{
+//         return count +=1;
+//     }
+
+// };
+
+// const count1 = Counter();
+// console.log(count1());
+// console.log(count1())
+// console.log(count1());
+
+
+
+// const count2 = Counter();
+// console.log(count2())
+// console.log(count2());
+
+
+// Example:
+// Input: [1,2], [3,4], [5]Output: [1,2,3,4,5]
+// Hint: Use rest parameters and spread inside reduce or flat.
+
+// const flattenArray = (...arr) =>{
+//     // return arr.flat();
+//     return arr.reduce((a, b)=> a)
+// };
+
+// console.log(flattenArray([1,2], [3,4], [5]));
+
+// Example:
+// Input: [1,2,4,5], n=5 → Output: 3
+// Hint: Use the formula: expected sum = n*(n+1)/2, then subtract actual sum.
+
+// const findMissing = (n) =>{
+//    // [1,2,4,5] = index 0, 1, 2, 3 
+//     const m = n.length + 1; // 4 +1 = 5;
+//     const expected = m * (m + 1) / 2; // 5 * (5 + 1) / 2 = 15
+//     const actual = n.reduce((a, b)=> a + b, 0); // 1, 2, 4, 5 = 12;
+
+//     return expected - actual; // 10 - 12;
+// };
+
+// console.log(findMissing([1,2,4,5]))
