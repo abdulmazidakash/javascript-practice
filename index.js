@@ -752,3 +752,81 @@ const vowels1 = ['a', 'e', 'i', 'o', 'u', "A", "E", "I", "O", "U"];
 // };
 
 // console.log(findMissing([1,2,4,5]))
+
+// const fibonacci = (n) =>{
+//     const fib = [0, 1];
+
+//     for(let i = 2; i < n; i++ ){
+//         fib.push(fib[i - 1] + [i - 2]);
+//     };
+
+//     return fib.slice(0, n);
+// };
+
+// // console.log(fibonacci(7));
+// console.log(fibonacci(4))
+
+// const fibonacci = (n) =>{
+//     const fib = [0, 1];
+
+//     for(let i = 2; i < n; i++){
+//         fib.push(fib[i - 1] + fib[i - 2]);
+//     }
+
+//     return fib.slice(0, n)
+// };
+
+// console.log(fibonacci(7))
+
+// const isPalindrome = (str) =>{
+//     const defaultString = str.toLowerCase();
+//     return defaultString === str.split("").reverse().join("");
+// };
+
+
+// console.log(isPalindrome("racecar"));
+// console.log(isPalindrome("hello"));
+
+// const fizzBuzz = (n) =>{
+//    for(let i = 1; i <=15; i++){
+//      if(i % 15 === 0){
+//         console.log("fizz buzz")
+//     }else if(i % 3 === 0){
+//         console.log("fizz")
+//     }else if(i % 5 === 0){
+//         console.log("buzz")
+//     }else{
+//         console.log(i);
+//     }
+//    }
+// };
+
+
+// console.log(fizzBuzz(15))
+
+// const findMissing = (arr) =>{
+//     const arrLength = arr.length + 1;
+//     console.log('array length ===>', arrLength)
+//     const expected = (arrLength * (arrLength + 1)) / 2;
+//     const actual = arr.reduce((a, b)=> a + b, 0);
+
+//     return expected - actual;
+// };
+
+// console.log(findMissing([1, 2, 4, 5, 6]));
+
+// const capitalizeWords = (str) =>{
+//     return str.split(" ")
+//     .map(w=> w.charAt(0).toUpperCase() + w.slice(1))
+//     .join(" ");
+// };
+
+
+// console.log(capitalizeWords("i love bangladesh"))
+
+// const reverseString = (str) =>{
+//     return str.split("").reverse().join("");
+// };
+
+
+// console.log(reverseString("Akash"))
