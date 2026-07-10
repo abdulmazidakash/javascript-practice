@@ -830,3 +830,82 @@ const vowels1 = ['a', 'e', 'i', 'o', 'u', "A", "E", "I", "O", "U"];
 
 
 // console.log(reverseString("Akash"))
+
+// const countVowels = (str) =>{
+//     const vowelsLength = str.toLowerCase().match(/[aeiou]/g);
+
+//     return vowelsLength ? vowelsLength.length: 0;
+// };
+
+// console.log(countVowels("Akash"))
+
+
+// Problem 43: Find Missing Number [Easy]
+// Description: Given an array of n-1 integers from 1 to n with one number missing, write a function
+// findMissing(arr, n) to find the missing number.
+// Example:
+// Input: [1,2,4,5], n=5 → Output: 3
+// Hint: Use the formula: expected sum = n*(n+1)/2, then subtract actual sum.
+
+// const findMissing = (n) =>{
+//     const totalNumber = n.length + 1;
+
+//     const expected = totalNumber * (totalNumber + 1) / 2;
+//     const actual = n.reduce((acc, cur)=> acc + cur, 0);
+
+//     return expected - actual;
+// };
+
+// console.log(findMissing([1, 3, 4, 5]))
+
+// function twoSum(arr, target) {
+//   const seen = {}; // value -> index map
+
+//   for (let i = 0; i < arr.length; i++) {
+//     const complement = target - arr[i];
+
+//     if (seen[complement] !== undefined) {
+//       return [seen[complement], i];
+//     }
+
+//     seen[arr[i]] = i;
+//   }
+
+//   return []; // no pair found
+// }
+
+// console.log(twoSum([2, 7, 11, 15], 18)); // [0, 1]
+
+// for(let i  = 1; i < 100; i++){
+//   console.log(i)
+// }
+
+// let numbers = 100;
+
+// for(let num of numbers){
+//   console.log(num)
+// }
+// const twoSum = (arr, target) =>{
+//   const seen = {}; // value -> index map
+
+//   for(let i = 0; i <arr.length; i++){
+//     const complement = target - arr[i];
+
+//     if(seen[complement] !== undefined){
+//       return [seen[complement], 1];
+//     }
+//     seen[arr[i]] = i;
+//   };
+
+//   return [];
+// };
+
+// console.log(twoSum([2, 7, 11, 15], 9)); // [0, 1]
+
+// (function(name) {
+//     console.log("hello, " + name);
+// })("Akash"); 
+
+// (function(){
+//   console.log('i am akash')
+// })();
